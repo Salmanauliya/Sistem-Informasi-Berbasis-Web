@@ -1,0 +1,69 @@
+<!--
+Saya mengerjakan tugas ini sendiri tanpa melakukan kecurangan seperti menggunakan
+atau menduplikasi kode program yang ada. Apabila saya melakukan kecurangan dalam
+pengerjaan tugas ini, maka saya siap menerima sanksi atau hukuman dari dosen mata
+kuliah dan Allah SWT.
+-->
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Preferensi Warna</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Preferensi Warna</h1>
+
+        <fieldset>
+            <legend>Warna</legend>
+
+            <div class="form-group">
+                <label>1. Warna latarbelakang</label>
+                <div class="color-box" id="bgBox"></div>
+            </div>
+
+            <div class="form-group">
+                <label>2. Warna teks</label>
+                <div class="color-box" id="textBox"></div>
+            </div>
+
+            <button id="saveBtn">Simpan</button>
+        </fieldset>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal" id="colorModal">
+        <div class="modal-content">
+            <h3>Pilih Warna</h3>
+
+            <!-- Palet warna -->
+            <div class="color-palette">
+                <div class="color-option" style="background-color: #FF0000;" data-color="#FF0000"></div>
+                <div class="color-option" style="background-color: #FFA500;" data-color="#FFA500"></div>
+                <div class="color-option" style="background-color: #FFFF00;" data-color="#FFFF00"></div>
+                <div class="color-option" style="background-color: #008000;" data-color="#008000"></div>
+                <div class="color-option" style="background-color: #0000FF;" data-color="#0000FF"></div>
+                <div class="color-option" style="background-color: #800080;" data-color="#800080"></div>
+                <div class="color-option" style="background-color: #FFC0CB;" data-color="#FFC0CB"></div>
+                <div class="color-option" style="background-color: #808080;" data-color="#808080"></div>
+                <div class="color-option" style="background-color: #FFFFFF; border: 2px solid #ccc;" data-color="#FFFFFF"></div>
+            </div>
+
+            <!-- Bagian Custom -->
+            <div class="custom-color">
+                <span>Custom</span>
+                <input type="color" id="colorPicker" value="#FF0000">
+            </div>
+
+            <br>
+            <button id="selectColor">Select</button>
+            <button id="closeModal">Cancel</button>
+        </div>
+    </div>
+
+    <script src="JS/script.js"></script>
+</body>
+</html>
