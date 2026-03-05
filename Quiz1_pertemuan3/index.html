@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kuis Hitung Klik</title>
+</head>
+<body>
+
+    <button onclick="hitungKlik()">Klik saya!</button>
+    <button onclick="resetKlik()">Reset</button>
+
+    <p id="hasil"></p>
+
+    <p>Klik tombol untuk melihat jumlah klik bertambah.</p>
+    <p>Jumlah klik akan tetap tersimpan walaupun browser ditutup.</p>
+
+    <script>
+
+        // Saat halaman pertama kali dibuka
+        window.onload = function() {
+
+            if (typeof(Storage) !== "undefined") {
+
+                if (localStorage.jumlahKlik) {
+                    document.getElementById("hasil").innerHTML =
+                        "Anda sudah mengklik tombol sebanyak " +
+                        localStorage.jumlahKlik +
+                        " kali.";
+                }
+
+            } else {
+                document.getElementById("hasil").innerHTML =
+                    "Browser Anda tidak mendukung Web Storage.";
+            }
+        }
+
+        function hitungKlik() {
+
+            if (typeof(Storage) !== "undefined") {
+
+                if (localStorage.jumlahKlik) {
+                    localStorage.jumlahKlik = Number(localStorage.jumlahKlik) + 1;
+                } else {
+                    localStorage.jumlahKlik = 1;
+                }
+
+                document.getElementById("hasil").innerHTML =
+                    "Anda sudah mengklik tombol sebanyak " +
+                    localStorage.jumlahKlik +
+                    " kali.";
+            }
+        }
+
+        function resetKlik() {
+            localStorage.removeItem("jumlahKlik");
+            document.getElementById("hasil").innerHTML =
+                "Hitungan sudah direset.";
+        }
+
+    </script>
+
+</body>
+</html>
