@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Program Garis Hidup</title>
+<link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="header" id="headerImages"></div>
+
+    <div class="content">
+
+        <h2><b>Program Garis Hidup Tanggal Lahir</b></h2>
+
+        <p>
+            Program ini merupakan program untuk mendeskripsikan karakter anda berdasarkan tanggal lahir yang kemudian hasilnya akan dikategorikan sebagai Garis Hidup 1 sampai 9.
+        </p>
+
+        <p>
+            Angka-angka dalam tanggal lahir Anda menyimpan banyak makna. Jumlahkan sampai menjadi satu angka, lalu lihat artinya! 
+            (misalnya 25 + 12 + 1998 = 2+5+1+2+1+9+9+8 = 36 = 3+6 = 9)
+        </p>
+
+        <h3><b>Ayo Cari Tahu Kepribadian Kamu !</b></h3>
+
+        <form id="formGarisHidup">
+
+            <p>
+                Masukkan Tanggal Lahir Anda :
+                <select id="tanggal"></select>
+            </p>
+
+            <p>
+                Masukkan Bulan Lahir Anda :
+                <select id="bulan">
+                    <option value=""></option>
+                    <option value="1">Januari</option>
+                    <option value="2">Februari</option>
+                    <option value="3">Maret</option>
+                    <option value="4">April</option>
+                    <option value="5">Mei</option>
+                    <option value="6">Juni</option>
+                    <option value="7">Juli</option>
+                    <option value="8">Agustus</option>
+                    <option value="9">September</option>
+                    <option value="10">Oktober</option>
+                    <option value="11">November</option>
+                    <option value="12">Desember</option>
+                </select>
+            </p>
+
+            <p>
+                Masukkan Tahun Lahir Anda :
+                <select id="tahun"></select>
+            </p>
+
+            <div class="buttonGroup">
+                <button type="submit">kirim</button>
+                <button type="reset" id="btnReset">reset</button>
+            </div>
+
+        </form>
+
+        <div class="output">
+
+            <p class="judulOutput"><b>Output</b></p>
+
+            <div class="boxOutput">
+                <div class="baris">
+                    <span>Tanggal</span>
+                    <input type="text" id="outTgl" readonly>
+                </div>
+                <div class="baris">
+                    <span>Bulan</span>
+                    <input type="text" id="outBln" readonly>
+                </div>
+                <div class="baris">
+                    <span>Tahun</span>
+                    <input type="text" id="outThn" readonly>
+                </div>
+                <div class="baris">
+                    <span>Hasil 1</span>
+                    <input type="text" id="outH1" readonly>
+                </div>
+                <div class="baris">
+                    <span>Hasil 2</span>
+                    <input type="text" id="outH2" readonly>
+                </div>
+                <div class="baris">
+                    <span>Hasil Akhir</span>
+                    <input type="text" id="outFinal" readonly>
+                </div>
+            </div>
+
+            <div id="hasilPanjang"></div>
+
+        </div>
+
+    </div>
+
+   <div class="footer">
+        280224 <br>
+        Sistem Informasi | ITENAS 2026
+    </div>
+</div>
+
+<script src="JS/script.js"></script>
+</body>
+</html>
