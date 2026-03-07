@@ -1,0 +1,168 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background-image: url("../assets/logo.png");
+    background-repeat: repeat;
+    background-size: 170px;
+}
+
+/* WRAPPER UTAMA */
+.wrapper {
+    width: 700px;
+    margin: 20px auto;
+    background: #d39a47;
+    border: 6px solid #6b2c2c;
+}
+
+/* HEADER */
+.header {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.header img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+}
+
+/* LAYOUT KONTEN */
+.content {
+    display: flex;
+    padding: 10px;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 90px;
+}
+
+.sidebar div {
+    padding: 8px;
+    font-size: 14px;
+    border-bottom: 2px solid gray;
+    cursor: pointer;
+    color: purple;
+}
+
+/* KONTEN UTAMA */
+.main {
+    flex: 1;
+    padding-left: 10px;
+}
+
+/* ========================= */
+/* HALAMAN HOME */
+/* ========================= */
+
+.homeFlex {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Memastikan elemen berjejer ke kiri */
+    width: 100%;
+}
+
+.homeText {
+    /* flex: 1; -> Dihapus agar tidak mendorong tombol jauh ke kanan */
+    background: #d39a47;
+    border: 2px solid #d39a47;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 10px; /* Memberi jarak sedikit antara teks dan tombol */
+}
+
+.shoutBox {
+    /* width: 120px; -> Dihapus agar ukuran box menyesuaikan tombol */
+    background: #d39a47;
+    padding: 15px 15px 15px 0; /* Padding kiri dikurangi agar lebih mepet */
+    display: flex;
+    align-items: center;
+}
+
+.shoutBtn {
+    background: black;
+    color: yellow;
+    padding: 6px 14px;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* ========================= */
+/* HALAMAN MENU MAKANAN */
+/* ========================= */
+
+.menuFlex {
+    display: flex;
+}
+
+table {
+    width: 100%;
+    background: gold;
+    border-collapse: collapse;
+    font-size: 13px;
+}
+
+th, td {
+    border: 1px solid #a67c00;
+    padding: 5px;
+}
+
+.right {
+    text-align: right;
+}
+
+input[type="number"],
+input[type="text"] {
+    width: 65px;
+}
+
+/* BOX RESET */
+.resetBox {
+    width: 100px;
+    background: #ddd;
+    padding: 15px;
+    margin-left: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.resetBtn {
+    background: black;
+    color: yellow;
+    padding: 6px 14px;
+    border: none;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+/* ========================= */
+/* HALAMAN KALKULATOR */
+/* ========================= */
+
+.calcRow input {
+    width: 60px;
+}
+
+.calcBtn {
+    background: black;
+    color: yellow;
+    padding: 6px 14px;
+    margin: 4px;
+    border: none;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+/* ========================= */
+/* FOOTER */
+/* ========================= */
+
+.footer {
+    text-align: center;
+    background: orange;
+    padding: 8px;
+    font-size: 12px;
+}
