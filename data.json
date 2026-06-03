@@ -1,0 +1,11 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "username": "sal",
+            "email": "sal@gmail.com",
+            "created_at": "2026-06-03 03:55:07"
+        }
+    ],
+    "nextId": 2
+}
