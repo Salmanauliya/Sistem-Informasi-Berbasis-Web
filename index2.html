@@ -1,0 +1,240 @@
+<!-- "saya mengerjakan tugas ini sendiri tanpa melakukan kecurangan seperti menggunakan, mendupliaksi kode perogram kode program yang ada. jia saya melakukan kecurangan dalam perngerjaan tugas ini maka saya siap menerima sanksi atau hukuman dari dari dosen mata kuliah dan tuhan / allah  swt"-->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Login - Dengan Efek Lubang Kertas</title>
+    <style>
+        body {
+            background: #4D83AA;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            padding-top: 60px;
+            padding-bottom: 60px;
+            font-family: Arial, sans-serif;
+        }
+
+        
+        .main-wrapper {
+            width: 800px;
+            min-height: 600px;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+
+        
+        .header-yellow {
+            background: #E2D800;
+            position: relative;
+            text-align: center;
+            padding: 20px 0 20px 0;
+        }
+
+        
+        .header-yellow-dots {
+            height: 15px;
+            width: 100%;
+            background-color: #E2D800;
+            background-image: radial-gradient(circle, #4D83AA 30%, transparent 30%);
+            background-size: 20px 20px;
+            background-position: center top;
+            margin-top: -8px;
+        }
+
+        .header-yellow h1 {
+            margin: 0;
+            color: #032152;
+            font-family: "Comic Sans MS", "Comic Sans", cursive;
+            font-size: 32px;
+        }
+
+        
+        .content-area {
+            padding: 30px;
+            text-align: center;
+        }
+
+        .content-area h2 {
+            color: #1F5A78;
+            margin-top: 0;
+            margin-bottom: 25px;
+            font-size: 1.8em;
+            font-family: "Comic Sans MS", "Comic Sans", cursive;
+        }
+
+       
+        .form-container {
+            width: 500px;
+            margin: auto;
+        }
+
+        
+        .form-row {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 12px;
+        }
+
+        
+        .label-box {
+            flex: 0 0 40%;
+            background: #C0E8FB;
+            padding: 12px;
+            border-radius: 12px;
+            text-align: right;
+            font-weight: bold;
+            color: #1F5A78;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+
+        
+        .input-box {
+            flex: 1;
+            background: #C0E8FB;
+            padding: 10px 15px;
+            border-radius: 12px;
+            box-sizing: border-box;
+        }
+
+        .input-box input {
+            width: 100%;
+            padding: 6px 12px;
+            border: 1.5px dashed #1F5A78;
+            border-radius: 10px;
+            outline: none;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+
+        .input-box input:focus {
+            border: 2px solid #1F5A78;
+            background-color: #f0f9ff;
+        }
+
+        
+        .remember-card {
+            background: #C0E8FB;
+            padding: 12px 20px;
+            border-radius: 12px;
+            text-align: right;
+            margin-top: 10px;
+            color: #1F5A78;
+            font-weight: bold;
+        }
+
+        .remember-card label {
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .remember-card input[type="checkbox"] {
+            width: 18px;
+            height: 18px;
+            cursor: pointer;
+            accent-color: #1F5A78;
+        }
+
+        
+        .submit-card {
+            background: #C0E8FB;
+            padding: 12px 20px;
+            border-radius: 12px;
+            text-align: right;
+            margin-top: 10px;
+        }
+
+        .btn-submit {
+            background: #5BA4C4;
+            color: white;
+            border: none;
+            padding: 7px 30px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            transition: background 0.2s;
+        }
+
+        .btn-submit:hover {
+            background: #1F5A78;
+        }
+
+        /* Responsive kecil */
+        @media (max-width: 600px) {
+            .main-wrapper {
+                width: 95%;
+            }
+            .form-container {
+                width: 100%;
+            }
+            .form-row {
+                flex-direction: column;
+            }
+            .label-box {
+                text-align: left;
+                justify-content: flex-start;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main-wrapper">
+        
+        <div class="header-yellow-dots"></div>
+        <div class="header-yellow">
+            <h1>Soal Pertama :</h1>
+        </div>
+
+        <div class="content-area">
+            <h2>Form Entah Apa</h2>
+
+            <div class="form-container">
+                
+                <div class="form-row">
+                    <div class="label-box">Username</div>
+                    <div class="input-box">
+                        <input type="text" placeholder="Username">
+                    </div>
+                </div>
+
+                
+                <div class="form-row">
+                    <div class="label-box">Password</div>
+                    <div class="input-box">
+                        <input type="password" placeholder="Password">
+                    </div>
+                </div>
+
+                
+                <div class="form-row">
+                    <div class="label-box">Verification Code</div>
+                    <div class="input-box">
+                        <input type="text" placeholder="isi kode anda">
+                    </div>
+                </div>
+
+              
+                <div class="remember-card">
+                    <label>
+                        <input type="checkbox"> Remember Me
+                    </label>
+                </div>
+
+              
+                <div class="submit-card">
+                    <button class="btn-submit">Submit</button>
+                </div>
+            </div> <!-- end form-container -->
+        </div> 
+    </div> 
+</body>
+</html>
