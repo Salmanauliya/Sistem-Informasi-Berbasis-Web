@@ -1,0 +1,257 @@
+<!-- "saya mengerjakan tugas ini sendiri tanpa melakukan kecurangan seperti menggunakan, mendupliaksi kode perogram kode program yang ada. jia saya melakukan kecurangan dalam perngerjaan tugas ini maka saya siap menerima sanksi atau hukuman dari dari dosen mata kuliah dan tuhan / allah  swt"-->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tampilan Sesuai Gambar</title>
+    <style>
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #4D83AA; 
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            display: flex;
+            justify-content: center;
+            padding-top: 20px;
+        }
+
+        .container {
+            width: 800px;
+            
+            background: linear-gradient(to right, #4D83AA 300px, white 300px);
+            
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            overflow: hidden;
+            min-height: 500px;
+            position: relative;
+        }
+
+       
+        .header {
+            background-color: #E2D800;
+            position: relative;
+        }
+
+        
+        .header-dots {
+            height: 15px;
+            width: 100%;
+           
+            background-image: radial-gradient(circle, #4D83AA 30%, transparent 30%);
+            background-size: 20px 20px;
+            background-position: center top;
+            margin-top: -8px; 
+        }
+
+        .header-content {
+            text-align: center;   
+            padding-top: 10px;
+            padding-bottom: 20px;
+            width: 100%;
+        }
+
+        .header h1 {
+            color: #032152;
+            font-family: "Comic Sans MS", "Comic Sans", cursive;
+            font-size: 32px;
+        }
+
+        
+        .content-wrapper {
+            display: flex;
+            /
+        }
+
+        .sidebar {
+            width: 300px;
+            padding: 20px;
+            color: #032152;
+            background-color: white;
+            
+            border-right: 3px dotted #032152; 
+        }
+
+        .sidebar h3 {
+            font-size: 18px;
+            margin-bottom: 5px;
+            border-bottom: 2px dotted #032152;
+            padding-bottom: 5px;
+            display: inline-block;
+            width: 100%;
+        }
+
+        .menu-list {
+            list-style: none;
+            margin-bottom: 20px;
+            margin-top: 10px;
+        }
+
+        .menu-list li a {
+            text-decoration: none;
+            color: #4D83AA;
+            font-size: 14px;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .menu-list li a:hover {
+            text-decoration: underline;
+        }
+
+
+        .search-box {
+            margin-top: 10px;
+            display: flex;
+            gap: 5px;
+        }
+
+        .search-box input {
+            border: 1px solid #ccc;
+            padding: 4px;
+            width: 140px;
+            color: #888;
+            font-size: 12px;
+        }
+
+        .search-box button {
+            background-color: #ddd;
+            border: 1px solid #999;
+            padding: 4px 10px;
+            font-weight: bold;
+            font-size: 11px;
+            color: #333;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+
+       
+        .main-content {
+            width: 500px;
+            padding: 20px;
+            padding-left: 30px;
+            background-color: transparent;
+        }
+
+        .main-content h2 {
+            color: #032152;
+            font-family: "Comic Sans MS", cursive;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        
+        .custom-table {
+            border-collapse: separate;
+            border-spacing: 0;
+            width: 100%;
+            max-width: 350px;
+            border-top: 5px solid #032152;
+            border-bottom: 5px solid #032152;
+            border-left: none;  
+            border-right: none;
+            border-radius: 6px; 
+            overflow: hidden;   
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+        .custom-table th {
+            padding: 10px;
+            background-color: #9CBCD0; 
+            color: #032152; 
+            font-weight: normal;
+            text-align: center;
+        }
+
+        .custom-table td {
+            padding: 8px;
+            text-align: center;
+            background-color: #9CBCD0; 
+            color: white; 
+        }
+
+       
+        .custom-table tfoot td {
+            background-color: white; 
+            color: #032152;        
+            font-size: 12px;
+            padding: 10px;
+            /* Menghilangkan garis pemisah jika ada, mengandalkan perbedaan warna saja */
+            border-top: none; 
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <div class="header-dots"></div> 
+            <div class="header-content">
+                <h1>Soal Pertama :)</h1>
+            </div>
+        </div>
+
+        <div class="content-wrapper">
+            
+            <aside class="sidebar">
+                <h3>Menu</h3>
+                <ul class="menu-list">
+                    <li><a href="#">Soal Pertama</a></li>
+                    <li><a href="#">Soal Kedua</a></li>
+                </ul>
+
+                <h3>Search</h3>
+                <div class="search-box">
+                    <input type="text" placeholder="Search this web">
+                    <button>GO!</button>
+                </div>
+            </aside>
+
+            <main class="main-content">
+                <h2>Tabel Sesuatu</h2>
+                
+                <table class="custom-table">
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Huruf</th>
+                            <th>Keterangan</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>A</td>
+                            <td>Pertama</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>B</td>
+                            <td>Kedua</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>C</td>
+                            <td>Ketiga</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">Data di atas adalah data fiktif</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </main>
+
+        </div>
+    </div>
+
+</body>
+</html>
